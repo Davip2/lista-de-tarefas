@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="desafio.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>📝 Minha Lista de Tarefas</h1>
+
+        <div class="entrada">
+            <input 
+                type="text" 
+                id="tarefa"
+                placeholder="Digite uma tarefa..."
+            >
+
+            <button id="btnAdicionar" class= "botao" onclick="adicionar()">
+                Adicionar
+            </button>
+        </div>
+
+        <div class="informacoes">
+
+            <p>
+                Tarefas:
+                <span id="contador">0</span>
+            </p>
+
+            <button id="btnLimpar">
+                Limpar tudo
+            </button>
+
+        </div>
+
+        <ul id="listaTarefas">
+
+            <!--
+                As tarefas serão adicionadas aqui
+                através do JavaScript.
+            -->
+
+        </ul>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
