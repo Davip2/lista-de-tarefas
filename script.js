@@ -9,7 +9,7 @@ function adicionar() {
     novaTarefa.innerHTML = tarefa;
 
     listaTarefas.appendChild(novaTarefa);
-    
+
     contador();
 }
 
@@ -23,4 +23,10 @@ function contador() {
 
     contador.innerHTML = cont;
 
+}
+
+function limpar(){
+    let lista = document.getElementById('listaTarefas');
+    lista.innerHTML = ' ';
+    document.getElementById('contador').innerHTML = 0
 }
