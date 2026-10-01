@@ -8,6 +8,18 @@ function adicionar() {
 
     novaTarefa.innerHTML = tarefa;
 
+    let botaoConcluir = document.createElement('button');
+
+    botaoConcluir.innerHTML = 'Concluir';
+
+    botaoConcluir.classList.add('btnConcluir');
+
+    botaoConcluir.onclick = function() {
+        novaTarefa.classList.add('concluida');
+    };
+
+    novaTarefa.appendChild(botaoConcluir);
+
     listaTarefas.appendChild(novaTarefa);
 
     contador();
